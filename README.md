@@ -1,4 +1,6 @@
 # Pizza Builder 🍕
+***
+#### Deployed on Netlify [Pizza Builder](https://pizza-maker-app.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -47,6 +47,7 @@ const App = () => {
 
   const addPizza = item => {
     setCart([...cart, item]);
+    setFormValues(initialFormValues)
   };
 
   const removePizza = id => {

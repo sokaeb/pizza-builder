@@ -10,13 +10,13 @@ const CartItem = (props) => {
             <p>{pizza.sauce}</p>
             <p>{pizza.crust}</p>
             <p>{pizza.cheese}</p>
-            <div>
+            {/* <div>
                 {pizza.meats.map((meat, i) => {
                     // console.log(meat.name)
                     if(meat.name === "checked") {
                     return <p>{meat.name}</p>
                 }})}
-            </div>
+            </div> */}
 
             <p>{pizza.specialInstructions}</p>
             <button onClick={()=>{removePizza(pizza.id)}}>Remove from Cart</button>

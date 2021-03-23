@@ -7,8 +7,8 @@ const Cart = () => {
 
     const getCartTotal = () => {
         let price = 0
-        cart.map(obj => {
-           if(obj.size === 'extra-large- $25'){
+        cart.forEach(obj => {
+          if(obj.size === 'extra-large- $25'){
                 price += 25
            }
            else if(obj.size === 'large- $20'){
@@ -27,9 +27,9 @@ const Cart = () => {
         <div className='cart displayBg'>
             <h2>Your Cart</h2>
             <div className='cartDiv'>
-                {cart.map(pizza => (
-                    <CartItem key={pizza.id} pizza={pizza} removePizza={removePizza} />
-                ))}
+                {cart.map(pizza =>
+                    (<CartItem key={pizza.id} pizza={pizza} removePizza={removePizza} />)
+                )}
             </div>
             <p>Total: ${getCartTotal()}</p>
             <button className='checkoutBtn'>Checkout</button>
